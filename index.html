@@ -7,7 +7,7 @@
 <title>GhostProxy — Preview da nova landing</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
 <style>
 
 body { margin: 0; background: #08090f; }
@@ -317,6 +317,13 @@ html{scroll-behavior:smooth}
   .dmain { padding: 20px; }
 }
 
+
+/* tipografia: sans em tudo; monoespaçada só em código, comandos e credenciais */
+.mono { font-family: inherit; font-variant-numeric: tabular-nums; }
+.tl, pre, pre.mono, .cmd, .keyf, .kv b, .code { font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; }
+.eye { font-family: inherit; letter-spacing: .1em; font-weight: 600; }
+.ipb { font-family: inherit; }
+.hand { font-family: inherit; font-size: 14px; line-height: 1.4; color: #c9cfdd; rotate: none; text-decoration: none; margin-top: 14px; }
 </style>
 </head>
 <body>
@@ -355,7 +362,7 @@ html{scroll-behavior:smooth}
 </div>
 <div class="fl l">
 <div class="in panel mono" style="padding: 0">
-<div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-bottom: 1px dashed rgba(255,255,255,.12); font-size: 12px; color: #9aa3b8"><span>&gt;_ sua conexão</span><span style="display: flex; align-items: center; gap: 8px"><span class="live"></span>gateway</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-bottom: 1px dashed rgba(255,255,255,.12); font-size: 12px; color: #9aa3b8"><span>sua conexão</span><span style="display: flex; align-items: center; gap: 8px"><span class="live"></span>gateway</span></div>
 <div style="padding: 12px 16px 16px">
 <div class="tl" style="color: #9aa3b8">Gateway</div>
 <div class="tl" style="color: #f1efe9; font-weight: 700">proxy.ghostproxy.tech</div>
@@ -372,7 +379,7 @@ html{scroll-behavior:smooth}
 <div class="in panel" style="padding: 22px">
 <div class="mono" style="font-size: 12px; color: #9aa3b8; letter-spacing: .06em; text-transform: uppercase">Distribuição da rede</div>
 <div style="margin-top: 14px; display: flex; flex-direction: column; gap: 10px"><div class="dr"><span>Estados Unidos</span><span class="bar" aria-hidden="true"><i style="width: 100%; background: #6ea8ff"></i></span><span class="mono">254</span></div><div class="dr"><span>Brasil</span><span class="bar" aria-hidden="true"><i style="width: 70%; background: #6ea8ff"></i></span><span class="mono">179</span></div><div class="dr"><span>Reino Unido</span><span class="bar" aria-hidden="true"><i style="width: 69%; background: #6ea8ff"></i></span><span class="mono">174</span></div><div class="dr"><span>Índia</span><span class="bar" aria-hidden="true"><i style="width: 53%; background: #6ea8ff"></i></span><span class="mono">135</span></div></div>
-<div class="hand">sua rede. seu controle.</div>
+<div class="hand">Sua rede. Seu controle.</div>
 </div>
 </div>
 </section>
@@ -435,7 +442,7 @@ html{scroll-behavior:smooth}
 <p class="eye rv">Cobertura</p>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 40px">
 <h2 class="h2 lit"><span class="w">Uma</span> <span class="w">rede</span> <span class="w">conectada</span><br><span class="w a">ao</span> <span class="w a">seu</span> <span class="w a">mundo.</span></h2>
-<div class="rv" style="max-width: 420px"><p style="margin: 0 0 12px; color: #9aa3b8; font-size: 15px; line-height: 1.5">Saídas registradas no gateway, por país. A disponibilidade é atualizada periodicamente a partir da rede.</p><span class="chip mono" style="font-size: 12px">proxy.ghostproxy.tech:7000 · country-us</span></div>
+<div class="rv" style="max-width: 420px"><p style="margin: 0 0 12px; color: #9aa3b8; font-size: 15px; line-height: 1.5">Saídas registradas no gateway, por país. A disponibilidade é atualizada periodicamente a partir da rede.</p><span class="chip code" style="font-size: 12px">proxy.ghostproxy.tech:7000 · country-us</span></div>
 </div>
 </div>
 <div class="rail" data-rail><div class="railt">
@@ -709,15 +716,15 @@ html{scroll-behavior:smooth}
 <div class="stage">
 <div class="glow" aria-hidden="true"></div>
 <div class="scene panel on" data-scene="0">
-<div class="sch mono"><span>&gt;_ criar conta</span><span>01</span></div>
+<div class="sch mono"><span>criar conta</span><span>01</span></div>
 <div class="scb"><div class="plrow sel"><span class="rd"></span><strong>E-mail</strong></div><div class="plrow"><span class="rd"></span><strong>Google</strong></div><div class="plrow"><span class="rd"></span><strong>Discord</strong></div></div>
 </div>
 <div class="scene panel" data-scene="1">
-<div class="sch mono"><span>&gt;_ comprar planos</span><span>02</span></div>
+<div class="sch mono"><span>comprar planos</span><span>02</span></div>
 <div class="scb"><div class="plrow sel"><span class="rd"></span><strong>Residencial IPv4</strong><span class="mono">10 GB · R$ 95,00</span></div><div class="plrow"><span class="rd"></span><strong>Datacenter IPv6</strong><span class="mono">por GB</span></div><div class="plrow"><span class="rd"></span><strong>Residencial Premium</strong><span class="mono">por GB</span></div><div class="plrow"><span class="rd"></span><strong>ISP Fixo</strong><span class="mono">por IP</span></div></div>
 </div>
 <div class="scene panel" data-scene="2">
-<div class="sch mono"><span>&gt;_ gerar proxies</span><span>Copiar</span></div>
+<div class="sch mono"><span>gerar proxies</span><span>Copiar</span></div>
 <div class="scb" style="gap: 12px">
 <div class="kv big"><span>Host</span><b class="mono"><span class="type">proxy.ghostproxy.tech</span></b></div>
 <div class="kv big"><span>Porta</span><b class="mono">7000</b></div>
